@@ -7,7 +7,7 @@ int[] array = new int[n];
 FillArray(array);
 PrintArray(array);
 int sumOfEven = SumEvenPosition(array);
-Console.WriteLine($"Сумма всех элементов, стоящих на четных позициях - {sumOfEven}.");
+Console.WriteLine($"Сумма всех элементов, стоящих на нечетных позициях - {sumOfEven}.");
 
 
 
@@ -47,7 +47,7 @@ void PrintArray(int[] arr1)
 int SumEvenPosition(int[] arr2)
 {
     int sum = 0;
-    for (int y = 2; y < arr2.Length; y += 2)
+    for (int y = 1; y < arr2.Length; y += 2)
     {
         sum+= arr2[y];
     }
